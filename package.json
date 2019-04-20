@@ -17,9 +17,9 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "upbin tsc --declaration",
-    "ci-test": "yarn test",
-    "test": "nyc mocha --require ts-node/register 'test/**/*.ts' --color always"
+    "build": "tsc --declaration",
+    "ci-test": "nyc mocha --require ts-node/register 'test/**/*.ts' --color always",
+    "test": "mocha --require ts-node/register 'test/**/*.ts' --color always"
   },
   "dependencies": {
     "buffer": "^5.1.0",

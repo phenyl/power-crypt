@@ -1,6 +1,6 @@
 import { describe, it } from 'mocha'
 import assert from 'power-assert'
-import powerCrypt from '../src/index.js'
+import powerCrypt from '../src'
 describe('powerCrypt', () => {
   it('crypts string, default encoding is base64', () => {
     const crypted = powerCrypt('shinout')
