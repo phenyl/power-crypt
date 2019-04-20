@@ -19,7 +19,8 @@
   "scripts": {
     "build": "tsc --declaration",
     "ci-test": "nyc mocha --require ts-node/register 'test/**/*.ts' --color always",
-    "test": "mocha --require ts-node/register 'test/**/*.ts' --color always"
+    "test": "mocha --require ts-node/register 'test/**/*.ts' --color always",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "buffer": "^5.1.0",
