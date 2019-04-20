@@ -1,12 +1,18 @@
 {
-  "cache": true,
-  "exclude": ["jsnext.js", "test/**/*.js"],
-  "require": [
-    "babel-register"
-  ],
-  "reporter": [
-    "lcov",
-    "html",
-    "text"
-  ]
+    "include": [
+      "src/**/*.ts"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "lcov",
+      "text",
+      "text-summary",
+      "html"
+    ],
+    "sourceMap": true
 }
