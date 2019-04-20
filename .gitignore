@@ -1,0 +1,21 @@
+# Dependency directories
+node_modules
+
+# Logs
+*.log
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# nyc test coverage
+.nyc_output
+
+.vscode
+yarn.lock
+package-lock.json
+dist
+lib
+tmp
+
+.idea
+.DS_Store
