@@ -39,7 +39,6 @@ jobs:
           key: v{{ .Environment.CIRCLECI_CACHE_VERSION }}-dependencies-{{ .Branch }}-{{ checksum "deps.txt" }}
       - run: yarn ci-test
       - run: yarn type-check
-      - run: yarn build
 workflows:
   version: 2.1
   test_deploy:

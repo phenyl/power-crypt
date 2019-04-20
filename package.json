@@ -1,6 +1,6 @@
 {
   "name": "power-crypt",
-  "version": "0.1.4",
+  "version": "0.2.2",
   "description": "",
   "repository": "https://github.com/phenyl-js/power-crypt",
   "license": "Apache-2.0",
@@ -17,6 +17,8 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
+    "clean": "rm -rf lib",
+    "prepare": "yarn clean && yarn build",
     "build": "tsc --declaration",
     "ci-test": "nyc mocha --require ts-node/register 'test/**/*.ts' --color always",
     "test": "mocha --require ts-node/register 'test/**/*.ts' --color always",
